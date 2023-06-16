@@ -30,7 +30,7 @@ if __name__ == '__main__':
     
     direc = os.getcwd()
     filesSTL = []
-    strOutPath = strInput + '.stl'
+    strOutPath = os.path.join(direc, strInput + '.stl')
     inputFailed = False
     for c in strInput:
         if c.isnumeric():
